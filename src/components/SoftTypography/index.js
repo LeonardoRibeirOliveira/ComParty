@@ -8,7 +8,7 @@ import SoftTypographyRoot from "components/SoftTypography/SoftTypographyRoot";
 
 const SoftTypography = forwardRef(
   (
-    { color, fontWeight, textTransform, verticalAlign, textGradient, opacity, children, ...rest },
+    { color, fontWeight, textTransform, verticalAlign, textGradient, opacity, children, background, ...rest },
     ref
   ) => (
     <SoftTypographyRoot
@@ -29,6 +29,7 @@ SoftTypography.defaultProps = {
   verticalAlign: "unset",
   textGradient: false,
   opacity: 1,
+  background:"none"
 };
 
 // Typechecking props for the SoftTypography
@@ -62,6 +63,7 @@ SoftTypography.propTypes = {
   textGradient: PropTypes.bool,
   children: PropTypes.node.isRequired,
   opacity: PropTypes.number,
+  background: PropTypes.string,
 };
 
 export default SoftTypography;

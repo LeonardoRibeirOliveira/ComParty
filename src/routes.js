@@ -17,7 +17,7 @@
 // Soft UI Dashboard React layouts
 import Dashboard from "layouts/dashboard";
 import Tables from "layouts/tables";
-import Billing from "layouts/billing";
+import Room from "layouts/room";
 import Profile from "layouts/profile";
 import SignIn from "layouts/authentication/sign-in";
 import SignUp from "layouts/authentication/sign-up";
@@ -52,11 +52,11 @@ const routes = [
   },
   {
     type: "collapse",
-    name: "Billing",
-    key: "billing",
-    route: "/billing",
+    name: "Sala",
+    key: "room",
+    route: "/room",
     icon: <CreditCard size="12px" />,
-    component: <Billing />,
+    component: <Room />,
     noCollapse: true,
   },
   { type: "title", title: "Account Pages", key: "account-pages" },
