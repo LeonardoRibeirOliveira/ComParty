@@ -16,8 +16,10 @@ function Room() {
   return (
     <DashboardLayout>
       <DashboardNavbar />
-      <SoftBox  >
-        <Transactions />
+      <SoftBox >
+        <Grid>
+          <Transactions />
+        </Grid>
       </SoftBox>
     </DashboardLayout>
   );

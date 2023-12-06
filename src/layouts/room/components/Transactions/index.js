@@ -8,19 +8,18 @@ import SoftBox from "components/SoftBox";
 import SoftTypography from "components/SoftTypography";
 import SoftInput from "components/SoftInput";
 
-
 function Transactions() {
   return (
-    <Card sx={{ height: "85vh", background:"#D5CEA3", width:"110vh" }}>
-        <SoftBox >  
-          <SoftTypography
-            variant="robot"
-            fontWeight="bold"
-          >
-            Aqui vai ficar o texto do chat
-          </SoftTypography>
-          <SoftInput/>
-        </SoftBox>
+    <Card sx={{ height: "85vh", background:"#D5CEA3", width:"110vh", justifyContent:"space-between" }}>
+        <SoftTypography
+          variant="robot"
+          color="text"
+          fontWeight="bold"
+          textTransform="uppercase"
+      >
+        Aqui vai ficar o texto do chat
+      </SoftTypography>
+      <SoftInput/>
     </Card>
   );
 }
