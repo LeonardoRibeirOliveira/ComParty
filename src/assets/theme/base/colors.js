@@ -1,6 +1,6 @@
 const colors = {
   background: {
-    default: "#f8f9fa",
+    default: "#D5CEA3",
   },
 
   text: {
@@ -64,7 +64,7 @@ const colors = {
   },
 
   grey: {
-    100: "#f8f9fa",
+    100: "#D5CEA3",
     200: "#e9ecef",
     300: "#dee2e6",
     400: "#ced4da",
@@ -219,7 +219,7 @@ const colors = {
     light: {
       main: "#ced4da",
       state: "#d1dae6",
-      border: "#f8f9fa",
+      border: "#D5CEA3",
     },
 
     dark: {
