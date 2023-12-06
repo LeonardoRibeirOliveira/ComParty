@@ -1,5 +1,6 @@
 // @mui material components
 import Grid from "@mui/material/Grid";
+import Card from "@mui/material/Card";
 
 // Soft UI Dashboard React components
 import SoftBox from "components/SoftBox";
@@ -15,14 +16,8 @@ function Room() {
   return (
     <DashboardLayout>
       <DashboardNavbar />
-      <SoftBox mt={4}>
-        <SoftBox my={3}>
-          <Grid container spacing={3}>
-            <Grid item xs={12} md={5}>
-              <Transactions />
-            </Grid>
-          </Grid>
-        </SoftBox>
+      <SoftBox  >
+        <Transactions />
       </SoftBox>
     </DashboardLayout>
   );
