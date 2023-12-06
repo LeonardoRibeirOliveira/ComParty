@@ -15,14 +15,10 @@ function Room() {
   return (
     <DashboardLayout>
       <DashboardNavbar />
-      <SoftBox mt={4}>
-        <SoftBox my={3}>
-          <Grid container spacing={3}>
-            <Grid item xs={12} md={5}>
-              <Transactions />
-            </Grid>
-          </Grid>
-        </SoftBox>
+      <SoftBox >
+        <Grid>
+          <Transactions />
+        </Grid>
       </SoftBox>
     </DashboardLayout>
   );
