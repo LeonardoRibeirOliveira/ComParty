@@ -33,13 +33,13 @@ function Overview() {
           </Grid>
           <Grid item xs={12} md={6} xl={4}>
             <ProfileInfoCard
-              title="profile information"
-              description="Hi, I’m Alec Thompson, Decisions: If you can’t decide, the answer is no. If two equally difficult paths, choose the one more painful in the short term (pain avoidance is creating an illusion of equality)."
+              title="desciçao "
+              description="sou o Gabriel e curto musicas"
               info={{
-                fullName: "Alec M. Thompson",
+                fullName: "Gabriel b. Garcia",
                 mobile: "(44) 123 1234 123",
                 email: "alecthompson@mail.com",
-                location: "USA",
+                location: "",
               }}
               social={[
                 {
@@ -53,16 +53,18 @@ function Overview() {
                   color: "twitter",
                 },
                 {
+
                   link: "https://www.instagram.com/creativetimofficial/",
                   icon: <InstagramIcon />,
                   color: "instagram",
                 },
+
               ]}
               action={{ route: "", tooltip: "Edit Profile" }}
             />
           </Grid>
           <Grid item xs={12} xl={4}>
-            <ProfilesList title="conversations" profiles={profilesListData} />
+            <ProfilesList title="amigos" profiles={profilesListData} />
           </Grid>
         </Grid>
       </SoftBox>

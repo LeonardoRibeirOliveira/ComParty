@@ -1,7 +1,7 @@
-// Soft UI Dashboard React Base Styles
+// Soft UI HOME React Base Styles
 import colors from "assets/theme/base/colors";
 
-// Soft UI Dashboard React Helper Functions
+// Soft UI HOME React Helper Functions
 import pxToRem from "assets/theme/functions/pxToRem";
 
 const { dark } = colors;

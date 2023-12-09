@@ -18,7 +18,7 @@ import breakpoints from "assets/theme/base/breakpoints";
 
 // Images
 import burceMars from "assets/images/bruce-mars.jpg";
-import curved0 from "assets/images/curved-images/curved0.jpg";
+import curved0 from "assets/images/curved-images/curved99.jpg";
 
 function Header() {
 
@@ -34,8 +34,8 @@ function Header() {
         sx={{
           backgroundImage: ({ functions: { rgba, linearGradient }, palette: { gradients } }) =>
             `${linearGradient(
-              rgba(gradients.info.main, 0.6),
-              rgba(gradients.info.state, 0.6)
+              rgba(gradients.info.main, 0.0),
+              rgba(gradients.info.state, 0.0)
             )}, url(${curved0})`,
           backgroundSize: "cover",
           backgroundPosition: "50%",

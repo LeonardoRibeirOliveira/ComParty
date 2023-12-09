@@ -34,8 +34,8 @@ import CreditCard from "examples/Icons/CreditCard";
 const routes = [
   {
     type: "collapse",
-    name: "Dashboard",
-    key: "dashboard",
+    name: "Home",
+    key: "home",
     route: "/dashboard",
     icon: <Shop size="12px" />,
     component: <Dashboard />,
@@ -62,7 +62,7 @@ const routes = [
   { type: "title", title: "Account Pages", key: "account-pages" },
   {
     type: "collapse",
-    name: "Profile",
+    name: "conta",
     key: "profile",
     route: "/profile",
     icon: <CustomerSupport size="12px" />,
