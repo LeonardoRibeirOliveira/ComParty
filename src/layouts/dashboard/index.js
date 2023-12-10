@@ -35,7 +35,7 @@ function Dashboard() {
           <Grid >
             <Grid >
               <ReportsBarChart
-                title="active users"
+                title="Músicas mais ouvidas"
                 
                 chart={chart}
                 items={items}
