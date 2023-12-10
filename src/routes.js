@@ -35,7 +35,7 @@ const routes = [
     type: "collapse",
     name: "Home",
     key: "home",
-    route: "/dashboard",
+    route: "/home",
     icon: <Shop size="12px" />,
     component: <Dashboard />,
     noCollapse: true,
