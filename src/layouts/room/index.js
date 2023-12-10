@@ -16,6 +16,7 @@ import Display from "layouts/room/components/Display";
 function Room() {
   return (
     <DashboardLayout>
+
       <DashboardNavbar />
       <SoftBox mt={4}>
         <SoftBox my={3}>
@@ -28,6 +29,7 @@ function Room() {
             </Grid>
           </Grid>
         </SoftBox>
+
       </SoftBox>
     </DashboardLayout>
   );
