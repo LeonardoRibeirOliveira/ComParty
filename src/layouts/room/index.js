@@ -15,7 +15,6 @@ import Transactions from "layouts/room/components/Transactions";
 function Room() {
   return (
     <DashboardLayout>
-      <DashboardNavbar />
       <SoftBox >
         <Grid>
           <Transactions />

@@ -19,7 +19,7 @@ function Transactions() {
       >
         Aqui vai ficar o texto do chat
       </SoftTypography>
-      <SoftInput/>
+      <SoftInput placeholder="Send your message here..." icon={{ component: "search", direction: "right" }}/>
     </Card>
   );
 }
