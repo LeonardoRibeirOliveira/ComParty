@@ -30,12 +30,12 @@ function Dashboard() {
   return (
     <DashboardLayout>
       <DashboardNavbar />
-      <SoftBox py={3}>
+      <SoftBox py={6}>
         <SoftBox mb={3}>
           <Grid container spacing={3}>
             <Grid item xs={12} lg={5}>
               <ReportsBarChart
-                title="active users"
+                title="musicas recomedadas"
                 description={
                   <>
                     (<strong>+23%</strong>) than last week

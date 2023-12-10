@@ -6,8 +6,8 @@ const reportsBarChartData = {
   items: [
     {
       icon: { color: "primary", component: "library_books" },
-      label: "users",
-      progress: { content: "36K", percentage: 60 },
+      label: "sertanejo",
+      progress: {  percentage: 60 },
     },
     {
       icon: { color: "info", component: "touch_app" },
