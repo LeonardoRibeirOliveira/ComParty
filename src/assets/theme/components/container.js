@@ -1,7 +1,7 @@
-// Soft UI Dashboard React base styles
+// Soft UI HOME React base styles
 import breakpoints from "assets/theme/base/breakpoints";
 
-// Soft UI Dashboard React helper functions
+// Soft UI HOME React helper functions
 import pxToRem from "assets/theme/functions/pxToRem";
 
 const {

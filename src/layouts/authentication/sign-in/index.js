@@ -16,7 +16,7 @@ import SoftButton from "components/SoftButton";
 import CoverLayout from "layouts/authentication/components/CoverLayout";
 
 // Images
-import curved9 from "assets/images/curved-images/curved-6.jpg";
+import curved9 from "assets/images/curved-images/curved14.jpg";
 
 function SignIn() {
   const [rememberMe, setRememberMe] = useState(true);
@@ -25,8 +25,8 @@ function SignIn() {
 
   return (
     <CoverLayout
-      title="Welcome back"
-      description="Enter your email and password to sign in"
+      title="Bem vindo de volta!"
+      description="INSIRA SEUS DADOS PARA LOGAR"
       image={curved9}
     >
       <SoftBox component="form" role="form">

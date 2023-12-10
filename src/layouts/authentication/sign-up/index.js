@@ -17,7 +17,7 @@ import SoftButton from "components/SoftButton";
 import BasicLayout from "layouts/authentication/components/BasicLayout";
 
 // Images
-import curved6 from "assets/images/curved-images/curved14.jpg";
+import curved6 from "assets/images/curved-images/curved-6.jpg";
 
 function SignUp() {
   const [agreement, setAgremment] = useState(true);
@@ -26,26 +26,26 @@ function SignUp() {
 
   return (
     <BasicLayout
-      title="Welcome!"
-      description="Use these awesome forms to login or create new account in your project for free."
+      title="Seja bem vindo!"
+      description="insira seus dados para logar"
       image={curved6}
     >
       <Card>
         <SoftBox p={3} mb={1} textAlign="center">
           <SoftTypography variant="h5" fontWeight="medium">
-            Register 
+           Registre-se
           </SoftTypography>
         </SoftBox>
         <SoftBox pt={2} pb={3} px={3}>
           <SoftBox component="form" role="form">
             <SoftBox mb={2}>
-              <SoftInput placeholder="Name" />
+              <SoftInput placeholder="Nome" />
             </SoftBox>
             <SoftBox mb={2}>
               <SoftInput type="email" placeholder="Email" />
             </SoftBox>
             <SoftBox mb={2}>
-              <SoftInput type="password" placeholder="Password" />
+              <SoftInput type="password" placeholder="Senha" />
             </SoftBox>
             <SoftBox mt={4} mb={1}>
               <SoftButton variant="gradient" color="dark" fullWidth>
@@ -54,7 +54,7 @@ function SignUp() {
             </SoftBox>
             <SoftBox mt={3} textAlign="center">
               <SoftTypography variant="button" color="text" fontWeight="regular">
-                Already have an account?&nbsp;
+                Voce ja tem uma conta?&nbsp;
                 <SoftTypography
                   component={Link}
                   to="/authentication/sign-in"

@@ -13,7 +13,7 @@ const colors = {
   },
 
   white: {
-    main: "#ffffff",
+    main: "#E5E5CB",
     focus: "#ffffff",
   },
 
@@ -261,7 +261,7 @@ const colors = {
     },
 
     light: {
-      background: "#ffffff",
+      background: "#E5E5CB",
       text: "#c7d3de",
     },
 
