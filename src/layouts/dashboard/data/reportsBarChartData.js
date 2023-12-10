@@ -5,24 +5,24 @@ const reportsBarChartData = {
   },
   items: [
     {
-      icon: { color: "primary", component: "library_books" },
-      label: "users",
-      progress: { content: "36K", percentage: 60 },
+      icon: { color: "primary", component: "" },
+      label: "Sertanejo",
+      progress: { content: "36 Ouvintes", percentage: 60 },
     },
     {
-      icon: { color: "info", component: "touch_app" },
-      label: "clicks",
-      progress: { content: "2M", percentage: 90 },
+      icon: { color: "info", component: "touch_pp" },
+      label: "Rock",
+      progress: { content: "200 Ouvintes", percentage: 90 },
     },
     {
-      icon: { color: "warning", component: "payment" },
-      label: "sales",
-      progress: { content: "$435", percentage: 30 },
+      icon: { color: "warning", component: "" },
+      label: "Pop",
+      progress: { content: "45 Ouvintes", percentage: 30 },
     },
     {
-      icon: { color: "error", component: "extension" },
-      label: "items",
-      progress: { content: "43", percentage: 50 },
+      icon: { color: "error", component: "" },
+      label: "Pagode",
+      progress: { content: "43 Ouvintes", percentage: 50 },
     },
   ],
 };
