@@ -37,22 +37,6 @@ function ReportsBarChart({ color, title, description, chart, items }) {
   return (
     <Card sx={{ height: "100%" }}>
       <SoftBox padding="1rem">
-        {useMemo(
-          () => (
-            <SoftBox
-              variant="gradient"
-              bgColor={color}
-              borderRadius="lg"
-              py={2}
-              pr={0.5}
-              mb={3}
-              height="12.5rem"
-            >
-              <Bar data={data} options={options} />
-            </SoftBox>
-          ),
-          [chart, color]
-        )}
         <SoftBox px={1}>
           <SoftBox mb={2}>
             <SoftTypography variant="h6" fontWeight="medium" textTransform="capitalize">
