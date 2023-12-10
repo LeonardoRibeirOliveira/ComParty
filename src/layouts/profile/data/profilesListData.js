@@ -8,8 +8,8 @@ import team4 from "assets/images/team-4.jpg";
 const profilesListData = [
   {
     image: kal,
-    name: "Sophie B.",
-    description: "Hi! I need more information..",
+    name: "Alexandre Borba.",
+    description: "Acredita no sonho que dá!",
     action: {
       type: "internal",
       route: "/pages/profile/profile-overview",
@@ -19,8 +19,8 @@ const profilesListData = [
   },
   {
     image: marie,
-    name: "Anne Marie",
-    description: "Awesome work, can you..",
+    name: "Leonardo",
+    description: "Sonhar, nunca desistir, Ter Fé, Pois Facil não é...",
     action: {
       type: "internal",
       route: "/pages/profile/profile-overview",
@@ -30,8 +30,8 @@ const profilesListData = [
   },
   {
     image: ivana,
-    name: "Ivanna",
-    description: "About files I can..",
+    name: "Thiago",
+    description: "Gosto de comer",
     action: {
       type: "internal",
       route: "/pages/profile/profile-overview",
@@ -41,7 +41,7 @@ const profilesListData = [
   },
   {
     image: team4,
-    name: "Peterson",
+    name: "Gabriel ",
     description: "Have a great afternoon..",
     action: {
       type: "internal",
