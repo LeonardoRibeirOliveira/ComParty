@@ -7,20 +7,23 @@ import Icon from "@mui/material/Icon";
 import SoftBox from "components/SoftBox";
 import SoftTypography from "components/SoftTypography";
 import SoftInput from "components/SoftInput";
+import Login from "./Login";
 
 function Display() {
   return (
-    <Card sx={{ height: "85vh", background:"#D5CEA3", width:"50vh", justifyContent:"space-between" }}>
-        <SoftTypography
-          variant="robot"
-          color="text"
-          fontWeight="bold"
-          textTransform="uppercase"
+    <Card sx={{ height: "85vh", background:"#D5CEA3", width:"45vh", justifyContent:"space-between", marginLeft: 'auto' }}>
+      <SoftTypography
+        variant="robot"
+        color="text"
+        fontWeight="bold"
+        textTransform="uppercase"
       >
-        Aqui vai ficar o Display de músicas
+        Display de músicas
       </SoftTypography>
+      <Login />
     </Card>
   );
 }
 
 export default Display;
+

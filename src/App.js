@@ -117,6 +117,8 @@ export default function App() {
     </SoftBox>
   );
 
+  const code = new URLSearchParams(window.location.search).get("code")
+
   return direction === "rtl" ? (
     <CacheProvider value={rtlCache}>
       <ThemeProvider theme={themeRTL}>
@@ -162,7 +164,11 @@ export default function App() {
       {layout === "vr" && <Configurator />}
       <Routes>
         {getRoutes(routes)}
-        <Route path="*" element={<Navigate to="/Home" />} />
+        {code !== null ? (
+          <Route path="*" element={<Navigate to="/Room" />} />
+        ) : (
+          <Route path="*" element={<Navigate to="/Home" />} />
+        )}
       </Routes>
     </ThemeProvider>
   );
