@@ -11,15 +11,23 @@ import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 
 // Billing page components
 import Transactions from "layouts/room/components/Transactions";
+import Display from "layouts/room/components/Display";
 
 function Room() {
   return (
     <DashboardLayout>
       <DashboardNavbar />
-      <SoftBox >
-        <Grid>
-          <Transactions />
-        </Grid>
+      <SoftBox mt={4}>
+        <SoftBox my={3}>
+          <Grid container spacing={3}>
+            <Grid item xs={12} md={7}>
+              <Transactions />
+            </Grid>
+            <Grid item xs={12} md={5}>
+              <Display />
+            </Grid>
+          </Grid>
+        </SoftBox>
       </SoftBox>
     </DashboardLayout>
   );
