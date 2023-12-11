@@ -8,6 +8,8 @@ import SoftBox from "components/SoftBox";
 import SoftTypography from "components/SoftTypography";
 import SoftInput from "components/SoftInput";
 import Login from "./Login";
+import Control from "./Control";
+
 
 function Display() {
   return (
@@ -20,6 +22,7 @@ function Display() {
       >
         Display de músicas
       </SoftTypography>
+      <Control />
       <Login />
     </Card>
   );
