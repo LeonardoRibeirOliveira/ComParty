@@ -50,45 +50,45 @@ function Control() {
     
       const musicAPI = [
         {
-          songName: 'Chasing',
-          songArtist: 'NEFFEX',
-          songSrc: './Assets/songs/Chasing - NEFFEX.mp3',
+          songName: 'Telefone',
+          songArtist: 'Djavu',
+          songSrc: './Assets/songs/Banda Djavu - Telefone.mp3',
           songAvatar: './Assets/Images/image1.jpg'
         },
         {
-          songName: 'AURORA - Runaway',
-          songArtist: 'Aurora Aksnes',
-          songSrc: './Assets/songs/AURORA - Runaway (Lyrics).mp3',
+          songName: 'Meteoro',
+          songArtist: 'Djavu',
+          songSrc: './Assets/songs/Meteoro.mp3',
           songAvatar: './Assets/Images/image4.jpg'
         },
         {
-          songName: 'Catch Me If I Fall',
-          songArtist: 'TEGNENT',
-          songSrc: './Assets/songs/Catch Me If I Fall - NEFFEX.mp3',
+          songName: 'Não Desligue o Telefone',
+          songArtist: 'Djavu',
+          songSrc: './Assets/songs/Não Desligue o Telefone.mp3',
           songAvatar: './Assets/Images/image2.jpg'
         },
         {
-          songName: 'Inspired (Clean)',
-          songArtist: 'NEFFEX',
-          songSrc: './Assets/songs/Inspired (Clean) - NEFFEX.mp3',
+          songName: 'Nave do amor',
+          songArtist: 'Djavu',
+          songSrc: './Assets/songs/Nave do amor.mp3',
           songAvatar: './Assets/Images/image3.jpg'
         },
         {
-          songName: 'Baby doll [ slowed + reverb ]',
-          songArtist: 'Kanika Kapoor',
-          songSrc: './Assets/songs/Baby doll [ slowed + reverb ] __ meet bros ,Kanika Kapoor __ jr santu.mp3',
+          songName: 'Oh Meu Amor',
+          songArtist: 'Djavu',
+          songSrc: './Assets/songs/Oh Meu Amor.mp3',
           songAvatar: './Assets/Images/image5.jpg'
         },
         {
-          songName: 'Soch (Slowed+Reverbed)',
-          songArtist: 'Hardy Sandhu',
-          songSrc: './Assets/songs/SOCH(Slowed+Reverbed) __ Hardy Sandhu.webm',
+          songName: 'Pitbull',
+          songArtist: 'Djavu',
+          songSrc: './Assets/songs/Pitbull.mp3',
           songAvatar: './Assets/Images/image6.jpg'
         },
         {
-          songName: 'Apna Bana Le',
-          songArtist: 'Arijit Singh',
-          songSrc: './Assets/songs/Apna Bana Le - Full Audio _ Bhediya _ Varun Dhawan, Kriti Sanon_ Sachin-Jigar,Arijit Singh,Amitabh B.webm',
+          songName: 'SocaSoca',
+          songArtist: 'Djavu',
+          songSrc: './Assets/songs/SocaSoca.mp3',
           songAvatar: './Assets/Images/image7.jpg'
         }
       ]
@@ -162,7 +162,7 @@ function Control() {
       return (
         <><>
               <div className="container">
-                  <audio src='./Assets/songs/Chasing - NEFFEX.mp3' ref={currentAudio} onEnded={handleNextSong} onTimeUpdate={handleAudioUpdate}></audio>
+                  <audio src='./Assets/songs/Banda Djavu - Telefone.mp3' ref={currentAudio} onEnded={handleNextSong} onTimeUpdate={handleAudioUpdate}></audio>
                   <video src={vidArray[videoIndex]} loop muted autoPlay className='backgroundVideo'></video>
                   <div className="blackScreen"></div>
                   <div className="music-Container">
