@@ -12,6 +12,7 @@ import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 // Billing page components
 import Transactions from "layouts/room/components/Transactions";
 import Display from "layouts/room/components/Display";
+import Chat from "./components/Chat";
 
 function Room() {
   return (
@@ -19,7 +20,7 @@ function Room() {
       <SoftBox >
           <Grid container spacing={3}>
             <Grid item xs={12} md={7}>
-              <Transactions />
+              <Chat/>
             </Grid>
             <Grid item xs={12} md={5}>
               <Display />

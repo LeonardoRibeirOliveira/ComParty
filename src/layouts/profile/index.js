@@ -37,24 +37,20 @@ function Overview() {
               description="sou o Gabriel e curto musicas"
               info={{
                 fullName: "Gabriel b. Garcia",
-                mobile: "(44) 123 1234 123",
-                email: "alecthompson@mail.com",
-                location: "",
+                mobile: "(62) xxxxx-xxxx",
+                email: "gbggames@mail.com",
+                location: "Goiânia",
               }}
               social={[
                 {
-                  link: "https://www.facebook.com/CreativeTim/",
                   icon: <FacebookIcon />,
                   color: "facebook",
                 },
                 {
-                  link: "https://twitter.com/creativetim",
                   icon: <TwitterIcon />,
                   color: "twitter",
                 },
                 {
-
-                  link: "https://www.instagram.com/creativetimofficial/",
                   icon: <InstagramIcon />,
                   color: "instagram",
                 },

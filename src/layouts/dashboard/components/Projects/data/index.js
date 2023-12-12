@@ -16,12 +16,12 @@ import logoJira from "assets/images/small-logos/logo-jira.svg";
 import logoInvesion from "assets/images/small-logos/logo-invision.svg";
 import team1 from "assets/images/team-1.jpg";
 import team2 from "assets/images/team-2.jpg";
-import team3 from "assets/images/team-3.jpg";
+import team3 from "assets/images/team6.jpg";
 import team4 from "assets/images/team-4.jpg";
 
 export default function data() {
-  const avatars = (members) =>
-    members.map(([image, name]) => (
+  const avatars = (ouvites) =>
+    ouvites.map(([image, name]) => (
       <Tooltip key={name} title={name} placeholder="bottom">
         <SoftAvatar
           src={image}
@@ -47,86 +47,44 @@ export default function data() {
 
   return {
     columns: [
-      { name: "companies", align: "left" },
-      { name: "members", align: "left" },
-      { name: "budget", align: "center" },
-      { name: "completion", align: "center" },
+      { name: "musicas", align: "left" },
+      { name: "ouvites", align: "left" },
+    
+      
     ],
 
     rows: [
       {
-        companies: [logoXD, "Soft UI XD Version"],
-        members: (
+        musicas: [logoXD, "sertanejo"],
+        ouvites: (
           <SoftBox display="flex" py={1}>
             {avatars([
-              [team1, "Ryan Tompson"],
-              [team2, "Romina Hadid"],
+              
+              [team4, "marie Obrien"],
               [team3, "Alexander Smith"],
-              [team4, "Jessica Doe"],
+              [team1, "Jessica Doe"],
             ])}
           </SoftBox>
         ),
-        budget: (
-          <SoftTypography variant="caption" color="text" fontWeight="medium">
-            $14,000
-          </SoftTypography>
-        ),
+        
+      
         completion: (
           <SoftBox width="8rem" textAlign="left">
             <SoftProgress value={60} color="info" variant="gradient" label={false} />
           </SoftBox>
         ),
       },
+      
+        
+      
       {
-        companies: [logoAtlassian, "Add Progress Track"],
-        members: (
+        musicas: [logoSpotify, "Rock"],
+        ouvites: (
           <SoftBox display="flex" py={1}>
             {avatars([
-              [team2, "Romina Hadid"],
-              [team4, "Jessica Doe"],
-            ])}
-          </SoftBox>
-        ),
-        budget: (
-          <SoftTypography variant="caption" color="text" fontWeight="medium">
-            $3,000
-          </SoftTypography>
-        ),
-        completion: (
-          <SoftBox width="8rem" textAlign="left">
-            <SoftProgress value={10} color="info" variant="gradient" label={false} />
-          </SoftBox>
-        ),
-      },
-      {
-        companies: [logoSlack, "Fix Platform Errors"],
-        members: (
-          <SoftBox display="flex" py={1}>
-            {avatars([
-              [team1, "Ryan Tompson"],
+              
               [team3, "Alexander Smith"],
-            ])}
-          </SoftBox>
-        ),
-        budget: (
-          <SoftTypography variant="caption" color="text" fontWeight="medium">
-            Not set
-          </SoftTypography>
-        ),
-        completion: (
-          <SoftBox width="8rem" textAlign="left">
-            <SoftProgress value={100} color="success" variant="gradient" label={false} />
-          </SoftBox>
-        ),
-      },
-      {
-        companies: [logoSpotify, "Launch our Mobile App"],
-        members: (
-          <SoftBox display="flex" py={1}>
-            {avatars([
-              [team4, "Jessica Doe"],
-              [team3, "Alexander Smith"],
-              [team2, "Romina Hadid"],
+              
               [team1, "Ryan Tompson"],
             ])}
           </SoftBox>
@@ -143,8 +101,8 @@ export default function data() {
         ),
       },
       {
-        companies: [logoJira, "Add the New Pricing Page"],
-        members: (
+        musicas: [logoJira, "MPB"],
+        ouvites: (
           <SoftBox display="flex" py={1}>
             {avatars([[team4, "Jessica Doe"]])}
           </SoftBox>
@@ -161,8 +119,8 @@ export default function data() {
         ),
       },
       {
-        companies: [logoInvesion, "Redesign New Online Shop"],
-        members: (
+        musicas: [logoInvesion, "Redesign New Online Shop"],
+        ouvites: (
           <SoftBox display="flex" py={1}>
             {avatars([
               [team1, "Ryan Tompson"],
