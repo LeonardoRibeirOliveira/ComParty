@@ -2,19 +2,21 @@
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 
-// Soft UI Dashboard React components
+//Components
 import SoftBox from "components/SoftBox";
 
-// Soft UI Dashboard React examples
+
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 
-// Billing page components
-import Transactions from "layouts/room/components/Transactions";
 import Display from "layouts/room/components/Display";
 import Chat from "./components/Chat";
+import inicitalChat from"./components/Chat/chatbase";
 
 function Room() {
+
+  localStorage.setItem('messages', JSON.stringify(inicitalChat));
+
   return (
     <DashboardLayout>
       <SoftBox >
