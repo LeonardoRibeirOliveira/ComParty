@@ -14,14 +14,6 @@ import Control from "./Control";
 function Display() {
   return (
     <Card sx={{ height: "85vh", background:"#D5CEA3", width:"45vh", justifyContent:"space-between", marginLeft: 'auto' }}>
-      <SoftTypography
-        variant="robot"
-        color="text"
-        fontWeight="bold"
-        textTransform="uppercase"
-      >
-        Display de músicas
-      </SoftTypography>
       <Control />
       <Login />
     </Card>

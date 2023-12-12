@@ -166,7 +166,7 @@ function Control() {
                   <video src={vidArray[videoIndex]} loop muted autoPlay className='backgroundVideo'></video>
                   <div className="blackScreen"></div>
                   <div className="music-Container">
-                      <p className='musicPlayer'>Music Player</p>
+                      <p className='musicPlayer'>Música tocando</p>
                       <p className='music-Head-Name'>{currentMusicDetails.songName}</p>
                       <p className='music-Artist-Name'>{currentMusicDetails.songArtist}</p>
                       <img src={currentMusicDetails.songAvatar} className={avatarClass[avatarClassIndex]} onClick={handleAvatar} alt="song Avatar" id='songAvatar' />
