@@ -4,8 +4,8 @@ import './Control.css';
 function Control() {
 
     const [currentMusicDetails, setCurrentMusicDetails] = useState({
-        songName: 'Chasing',
-        songArtist: 'NEFFEX',
+        songName: 'Telefone',
+        songArtist: 'Djavu',
         songSrc: './Assets/songs/Chasing - NEFFEX.mp3',
         songAvatar: './Assets/Images/image1.jpg'
       })
