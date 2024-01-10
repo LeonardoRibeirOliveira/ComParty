@@ -17,11 +17,11 @@ import typography from "assets/theme/base/typography";
 
 // Dashboard layout components
 import Projects from "layouts/dashboard/components/Projects";
-import OrderOverview from "layouts/dashboard/components/OrderOverview";
+
 
 // Data
 import reportsBarChartData from "layouts/dashboard/data/reportsBarChartData";
-import gradientLineChartData from "layouts/dashboard/data/gradientLineChartData";
+
 
 function Dashboard() {
   const { size } = typography;
@@ -36,7 +36,6 @@ function Dashboard() {
             <Grid >
               <ReportsBarChart
                 title="Músicas mais ouvidas"
-                
                 chart={chart}
                 items={items}
               />
@@ -44,12 +43,9 @@ function Dashboard() {
 
           </Grid>
         </SoftBox>
-        <Grid container spacing={3}>
+        <Grid container spacing={120}>
           <Grid item xs={12} md={6} lg={8}>
             <Projects />
-          </Grid>
-          <Grid item xs={12} md={6} lg={4}>
-            <OrderOverview />
           </Grid>
         </Grid>
       </SoftBox>

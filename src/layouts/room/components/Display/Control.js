@@ -2,6 +2,8 @@ import React, { useRef, useState, useEffect } from 'react';
 import './Control.css';
 import { element } from 'prop-types';
 
+import next from "../icons/flecha.png" ;
+
 function Control() {
   const [tracks, setTracks] = useState([]);
   const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
@@ -36,9 +38,15 @@ function Control() {
             <p className='music-Head-Name'>{tracks[currentTrackIndex].name}</p>
             <p className='music-Head-Name'>{tracks[currentTrackIndex].artists[0].name}</p>
             <img src={tracks[currentTrackIndex].album.images[0].url} alt="song Avatar" id='songAvatar' ></img>
-            <button className='fa-solid fa-backward musicControler' onClick={showPreviousTrack} disabled={currentTrackIndex === 0}>Previous</button>
-            <button className='fa-solid fa-forward musicControler' onClick={showNextTrack} disabled={currentTrackIndex === tracks.length - 1}>Next</button>
             <audio name="musicProgressBar"  src={tracks[currentTrackIndex].preview_url} controls className='W-1000'></audio>
+            <div className="musics-butons">
+            <button className="previous-music" onClick={showPreviousTrack} disabled={currentTrackIndex === 0}>
+              <img src={next} />
+            </button>
+            <button className="next-music" onClick={showNextTrack} disabled={currentTrackIndex === tracks.length - 1}>
+              <img src={next} />
+            </button>    
+            </div>
           </div>
         </div>
       )}

@@ -116,3 +116,34 @@ body {
 .music-Artist-Name{
     font-size: 70%;
 }
+
+.musics-butons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.previous-music {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    transform: rotate(180deg);
+}
+
+.previous-music img{
+    width: 40px;
+    height: 40px;
+}
+
+.next-music{
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+}
+
+.next-music img{
+    width: 40px;
+    height: 40px;
+}
