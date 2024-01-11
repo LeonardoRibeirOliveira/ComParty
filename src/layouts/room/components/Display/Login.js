@@ -9,7 +9,7 @@ export default function Login() {
   return (
     <Container
       className="d-flex justify-content-center align-items-center"
-      style={{ minHeight: "100vh" }}
+      style={{ minHeight: "10%" }}
     >
     <SoftButton variant="gradient" color="info" fullWidth href={AUTH_URL}>
         Termos spotify

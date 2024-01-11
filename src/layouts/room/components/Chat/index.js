@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import Card from "@mui/material/Card";
 import './chat.css';
 
+import send from "../icons/seta.png";
+
 
 function Chat() {
     const [message, sendMessage] = useState({
@@ -65,8 +67,7 @@ function Chat() {
                     placeholder="Digite sua mensagem"
                     onChange= {(e) => sendMessage({...message, text: e.target.value})}
                   />
-                    <span className="highlight"></span>
-                  <span className="bar"></span>
+                  <button className="send_message"><img src={send}/></button>
             </form>
         </div>
         )

@@ -15,12 +15,12 @@
 .tittle{
     text-decoration:black;
     font-weight: bold;
-    height: min-content;
+    height: 2%;
 
 }
 
 .messages{
-  height: 25em;;
+  height: 85%;
   overflow-y: scroll;
   display:block;
   scrollbar-width: thin;          /* "auto" or "thin" */
@@ -48,20 +48,45 @@
 }
 
 .group{ 
-  position:relative; 
-  margin-bottom:45px;
+  display: flex;
+  width: 100%;
+  border-color: #d5cea3;
+  border-radius: 5px;
+  background-color: rgb(255 255 255);
+  padding: 1%;
+  width:90%;
+
+  padding-bottom: 1%;
 }
 
 input{
-  font-size:18px;
-  padding:10px 10px 10px 10px;
-  border-color: #d5cea3;
-  border-radius: 3px;
-  width: 105vh;
-  margin: 0px;
-  border: 0px;
-  background-color: rgba(229, 229, 203, 1);
+  flex-grow: 2;
+  border: none;
+  width: 80%;
+  font-size:80%;
 }
+
+input:focus {
+  outline: none;
+}
+
+.send_message {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background: none;
+  border: none;
+}
+.send_message img {
+  width: 25px;
+  height: 20px;
+
+}
+
+.group:focus-within { 
+  outline: 1px solid #d5cea3;
+}
+
 
 .list {
   margin: 10px;

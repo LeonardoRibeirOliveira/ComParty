@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import './Control.css';
 import { element } from 'prop-types';
 
-import next from "../icons/flecha.png" ;
+import next from "../icons/flecha.png";
 
 function Control() {
   const [tracks, setTracks] = useState([]);
