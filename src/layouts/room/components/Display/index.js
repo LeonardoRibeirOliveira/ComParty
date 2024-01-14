@@ -15,7 +15,6 @@ function Display() {
   return (
     <Card sx={{ height: "85vh", background:"#D5CEA3", width:"45vh", justifyContent:"space-between", marginLeft: 'auto' }}>
       <Control />
-      <Login />
     </Card>
   );
 }
