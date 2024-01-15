@@ -14,8 +14,9 @@ import PropTypes from 'prop-types';
 
 function Display({ roomId }) {
   return (
-    <Card sx={{ height: "85vh", background:"#D5CEA3", width:"45vh", justifyContent:"space-between", marginLeft: 'auto' }}>
+    <Card sx={{ height: "95vh", background:"#D5CEA3", width:"45vh", justifyContent:"space-around",alignContent:"space-around", marginLeft: 'auto' }}>
       <Control roomId={roomId}/>
+      <Login/>
     </Card>
   );
 }
@@ -25,6 +26,6 @@ function Display({ roomId }) {
 export default Display;
 
 Display.propTypes = {
-  roomId: PropTypes.string.isRequired, // ou o tipo de dados correto para 'roomId'
+  roomId: PropTypes.string,
 };
 

@@ -7,7 +7,7 @@ import next from "../icons/flecha.png";
 function Control({ roomId }) {
   const [tracks, setTracks] = useState([]);
   const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
-  console.log(roomId, "AOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOpa");
+
   const getTracks = async () => {
     let data;
     try {
@@ -53,20 +53,20 @@ function Control({ roomId }) {
   return (
     <div className="container">
       {tracks.length > 0 && (
-        <div className="music-Container">
-          <div key={tracks[currentTrackIndex].album.id} className='col'>
-            <p className='music-Head-Name'>{tracks[currentTrackIndex].name}</p>
-            <p className='music-Head-Name'>{tracks[currentTrackIndex].artists[0].name}</p>
-            <img src={tracks[currentTrackIndex].album.images[0].url} alt="song Avatar" id='songAvatar' ></img>
-            <audio name="musicProgressBar"  src={tracks[currentTrackIndex].preview_url} controls className='W-1000'></audio>
-            <div className="musics-butons">
-            <button className="previous-music" onClick={showPreviousTrack} disabled={currentTrackIndex === 0}>
-              <img src={next} />
-            </button>
-            <button className="next-music" onClick={showNextTrack} disabled={currentTrackIndex === tracks.length - 1}>
-              <img src={next} />
-            </button>    
-            </div>
+        <div key={tracks[currentTrackIndex].album.id} className="music-Container">
+          <p className='music-Room-Name' >Atualmente em</p>
+          <p className='music-Room-Name' >{localStorage.getItem('nameRoom')}</p>
+          <p className='music-Head-Name'>{tracks[currentTrackIndex].name}</p>
+          <p className='music-Head-Name'>{tracks[currentTrackIndex].artists[0].name}</p>
+          <img src={tracks[currentTrackIndex].album.images[0].url} alt="song Avatar" id='songAvatar' ></img>
+          <audio name="musicProgressBar"  src={tracks[currentTrackIndex].preview_url} controls className='W-1000'></audio>
+          <div className="musics-butons">
+          <button className="previous-music" onClick={showPreviousTrack} disabled={currentTrackIndex === 0}>
+            <img src={next} />
+          </button>
+          <button className="next-music" onClick={showNextTrack} disabled={currentTrackIndex === tracks.length - 1}>
+            <img src={next} />
+          </button>    
           </div>
         </div>
       )}
@@ -79,5 +79,5 @@ function Control({ roomId }) {
 export default Control;
 
 Control.propTypes = {
-  roomId: PropTypes.string.isRequired, // ou o tipo de dados correto para 'roomId'
+  roomId: PropTypes.string,
 };

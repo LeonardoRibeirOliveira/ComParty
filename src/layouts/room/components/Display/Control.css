@@ -3,14 +3,15 @@ body {
     padding: 0;
     overflow: hidden;
     box-sizing: border-box;
-    height: 110vh; /* 1/3 da altura da tela */
+    height: 150vh; /* 1/3 da altura da tela */
 }
 
 .container {
-    height: 110vh; /* 1/3 da altura da tela */
+    height: 100%; /* 1/3 da altura da tela */
     display: flex;
-    justify-content: center;
-    align-items: flex-end; /* Ajustado para alinhar na parte inferior */
+    flex-direction: column;
+    margin-bottom: 20%;
+
 }
 
 .backgroundVideo {
@@ -111,6 +112,18 @@ body {
 
 .music-Head-Name{
     font-size: 120%;
+    margin-top: 10px;
+}
+
+.music-Room-Name{
+    font-size: 150%;
+    font:bold;
+    margin: 0%;
+    border: 0%;
+    padding: auto;
+    padding-left:20%;
+    padding-right:20%;
+    background-color: #d6c978;
 }
 
 .music-Artist-Name{
@@ -146,4 +159,9 @@ body {
 .next-music img{
     width: 40px;
     height: 40px;
+}
+
+.spotifyTerms{
+    display: flex;
+    flex-direction:row-reverse;
 }

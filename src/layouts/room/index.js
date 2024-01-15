@@ -14,7 +14,19 @@ import { useParams } from "react-router-dom";
 import PropTypes from 'prop-types';
 
 function Room() {
-  const { id } = useParams();
+  const { id} = useParams();
+  const rooms = [
+    { id: 1, name: "Sertanejo"},
+    { id: 2, name: "Rock"},
+    { id: 3, name: "MPB"},
+    { id: 4, name: "Pop"},
+    { id: 5, name: "Eletrofunk"}
+  ];
+  rooms.forEach(el =>{
+    if(el.id == id){
+      localStorage.setItem('nameRoom', el.name);
+    }
+  });
 
   localStorage.setItem('messages', JSON.stringify(inicitalChat));
 

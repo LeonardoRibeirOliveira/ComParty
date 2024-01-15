@@ -1,5 +1,5 @@
-import React from "react"
-import { Container } from "react-bootstrap"
+import React from "react";
+import { Container } from "react-bootstrap";
 import SoftButton from "components/SoftButton";
 
 const AUTH_URL =
@@ -8,8 +8,7 @@ const AUTH_URL =
 export default function Login() {
   return (
     <Container
-      className="d-flex justify-content-center align-items-center"
-      style={{ minHeight: "10%" }}
+      className="d-flex justify-content-end align-items-end flex-direction-row-reverse margin-50px"
     >
     <SoftButton variant="gradient" color="info" fullWidth href={AUTH_URL}>
         Termos spotify
