@@ -1,16 +1,36 @@
 import React, { useRef, useState, useEffect } from 'react';
 import './Control.css';
-import { element } from 'prop-types';
+import PropTypes from 'prop-types';
 
 import next from "../icons/flecha.png";
 
-function Control() {
+function Control({ roomId }) {
   const [tracks, setTracks] = useState([]);
   const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
-
+  console.log(roomId, "AOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOpa");
   const getTracks = async () => {
+    let data;
     try {
-      let data = await fetch("https://v1.nocodeapi.com/lesnado/spotify/AuXXlbuHJUNOhWrv/search?q=JirayaUai&type=track");
+      if(roomId == 1)
+      {
+        data = await fetch("https://v1.nocodeapi.com/leonardoribeiro/spotify/aCKDBJwfRkXQMhqn/search?q=Sertanejo&type=track&perPage=50");
+      }
+      else if(roomId == 2)
+      {
+        data = await fetch("https://v1.nocodeapi.com/leonardoribeiro/spotify/aCKDBJwfRkXQMhqn/search?q=ACDC&type=track&perPage=50");
+      }
+      else if(roomId == 3)
+      {
+        data = await fetch("https://v1.nocodeapi.com/leonardoribeiro/spotify/aCKDBJwfRkXQMhqn/search?q=MPB&type=track&perPage=50");
+      }
+      else if(roomId == 4)
+      {
+        data = await fetch("https://v1.nocodeapi.com/leonardoribeiro/spotify/aCKDBJwfRkXQMhqn/search?q=Pop&type=track&perPage=50");
+      }
+      else
+      {
+        data = await fetch("https://v1.nocodeapi.com/leonardoribeiro/spotify/aCKDBJwfRkXQMhqn/search?q=Eletrofunk&type=track&perPage=50");
+      }
       let convertedData = await data.json();
       setTracks(convertedData.tracks.items);
     } catch (error) {
@@ -54,4 +74,10 @@ function Control() {
   );
 }
 
+
+
 export default Control;
+
+Control.propTypes = {
+  roomId: PropTypes.string.isRequired, // ou o tipo de dados correto para 'roomId'
+};

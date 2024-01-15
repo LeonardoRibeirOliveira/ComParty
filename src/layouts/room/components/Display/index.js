@@ -11,13 +11,15 @@ import Login from "./Login";
 import Control from "./Control";
 
 
-function Display() {
+function Display({ roomId }) {
   return (
     <Card sx={{ height: "85vh", background:"#D5CEA3", width:"45vh", justifyContent:"space-between", marginLeft: 'auto' }}>
-      <Control />
+      <Control roomId={roomId}/>
     </Card>
   );
 }
+
+
 
 export default Display;
 

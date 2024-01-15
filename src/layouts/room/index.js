@@ -9,8 +9,12 @@ import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import Display from "layouts/room/components/Display";
 import Chat from "./components/Chat";
 import inicitalChat from"./components/Chat/chatbase";
+import React from "react";
+import { useParams } from "react-router-dom";
+import PropTypes from 'prop-types';
 
 function Room() {
+  const { id } = useParams();
 
   localStorage.setItem('messages', JSON.stringify(inicitalChat));
 
@@ -22,7 +26,7 @@ function Room() {
               <Chat/>
             </Grid>
             <Grid item  md={5}>
-              <Display />
+              <Display roomId={id}/>
             </Grid>
           </Grid>
         </SoftBox>
@@ -30,5 +34,9 @@ function Room() {
     </DashboardLayout>
   );
 }
+
+Room.propTypes = {
+  match: PropTypes.object.isRequired,
+};
 
 export default Room;

@@ -13,7 +13,9 @@ import theme from "assets/theme";
 
 // Soft UI Dashboard React routes
 import routes from "routes";
-
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
 // Images
 import LogoIcon from "imgs/Logo.png";
 
@@ -33,7 +35,7 @@ export default function App() {
 
 
   const code = new URLSearchParams(window.location.search).get("code")
-
+  
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />

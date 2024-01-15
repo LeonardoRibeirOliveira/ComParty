@@ -16,6 +16,7 @@
 
 // Soft UI Dashboard React layouts
 import Dashboard from "layouts/dashboard";
+import RoomList from "layouts/room-list";
 import Room from "layouts/room";
 import Profile from "layouts/profile";
 import SignIn from "layouts/authentication/sign-in";
@@ -23,11 +24,9 @@ import SignUp from "layouts/authentication/sign-up";
 
 // Soft UI Dashboard React icons
 import Shop from "examples/Icons/Shop";
-import Office from "examples/Icons/Office";
 import Document from "examples/Icons/Document";
 import SpaceShip from "examples/Icons/SpaceShip";
 import CustomerSupport from "examples/Icons/CustomerSupport";
-import CreditCard from "examples/Icons/CreditCard";
 
 
 const routes = [
@@ -42,12 +41,13 @@ const routes = [
   },
   {
     type: "collapse",
-    name: "Sala",
-    key: "room",
-    route: "/room",
-    icon: <CreditCard size="12px" />,
-    component: <Room />,
-    noCollapse: true,
+    name: "Lista de Salas",
+    key: "room-list",
+    route: "/room-list",
+    icon: <SpaceShip size="12px" />, // Escolha um ícone apropriado
+    component: <RoomList />, // Crie o componente RoomList
+    noCollapse: false,
+    
   },
   { type: "title", title: "Account Pages", key: "account-pages" },
   {
@@ -75,6 +75,12 @@ const routes = [
     route: "/authentication/sign-up",
     icon: <SpaceShip size="12px" />,
     component: <SignUp />,
+    noCollapse: true,
+  },
+  {
+    key: "room",
+    route: "/room/:id",
+    component: <Room />,
     noCollapse: true,
   },
 ];
