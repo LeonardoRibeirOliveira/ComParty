@@ -25,7 +25,7 @@ function Control({ roomId }) {
       }
       else if(roomId == 4)
       {
-        data = await fetch("https://v1.nocodeapi.com/leonardoribeiro/spotify/aCKDBJwfRkXQMhqn/search?q=Pop&type=track&perPage=50");
+        data = await fetch("https://v1.nocodeapi.com/leonardoribeiro/spotify/aCKDBJwfRkXQMhqn/search?q=PopMusic&type=track&perPage=50");
       }
       else
       {

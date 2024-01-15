@@ -9,6 +9,7 @@ import SoftTypography from "components/SoftTypography";
 import SoftInput from "components/SoftInput";
 import Login from "./Login";
 import Control from "./Control";
+import PropTypes from 'prop-types';
 
 
 function Display({ roomId }) {
@@ -23,4 +24,7 @@ function Display({ roomId }) {
 
 export default Display;
 
+Display.propTypes = {
+  roomId: PropTypes.string.isRequired, // ou o tipo de dados correto para 'roomId'
+};
 
