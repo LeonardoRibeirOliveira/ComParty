@@ -57,9 +57,9 @@ function Control({ roomId }) {
           <p className='music-Room-Name' >Atualmente em</p>
           <p className='music-Room-Name' >{localStorage.getItem('nameRoom')}</p>
           <p className='music-Head-Name'>{tracks[currentTrackIndex].name}</p>
-          <p className='music-Head-Name'>{tracks[currentTrackIndex].artists[0].name}</p>
+          <p className='music-Artist-Name'>{tracks[currentTrackIndex].artists[0].name}</p>
           <img src={tracks[currentTrackIndex].album.images[0].url} alt="song Avatar" id='songAvatar' ></img>
-          <audio name="musicProgressBar"  src={tracks[currentTrackIndex].preview_url} controls className='W-1000'></audio>
+          <audio name="musicProgressBar"  src={tracks[currentTrackIndex].preview_url} controls className="musicProgressBar"></audio>
           <div className="musics-butons">
           <button className="previous-music" onClick={showPreviousTrack} disabled={currentTrackIndex === 0}>
             <img src={next} />

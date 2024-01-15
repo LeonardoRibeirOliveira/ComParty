@@ -5,6 +5,9 @@ import Icon from "@mui/material/Icon";
 // Soft UI Dashboard React components
 import SoftBox from "components/SoftBox";
 import SoftTypography from "components/SoftTypography";
+import routes from "routes";
+import LogoIcon from "imgs/Logo.png";
+import Sidenav from "examples/Sidenav";
 
 // Soft UI Dashboard React examples
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
@@ -29,7 +32,11 @@ function Dashboard() {
 
   return (
     <DashboardLayout>
-      <DashboardNavbar />
+          <Sidenav
+            brand={LogoIcon}
+            brandName="ComParty"
+            routes={routes}
+          />
       <SoftBox py={3}>
         <SoftBox mb={3}>
           <Grid >

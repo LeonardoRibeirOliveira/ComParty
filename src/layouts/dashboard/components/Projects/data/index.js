@@ -62,9 +62,9 @@ export default function data() {
           <SoftBox display="flex" py={1}>
             {avatars([
               
-              [team4, "marie Obrien"],
-              [team3, "Alexander Smith"],
-              [team1, "Jessica Doe"],
+              [team4, "Gabriel B."],
+              [team3, "Leonardo R."],
+              [team1, "Thiago G."],
             ])}
           </SoftBox>
         ),
@@ -85,9 +85,9 @@ export default function data() {
           <SoftBox display="flex" py={1}>
             {avatars([
               
-              [team3, "Alexander Smith"],
+              [team3, "Leonardo R."],
               
-              [team1, "Ryan Tompson"],
+              [team1, "Thiago G."],
             ])}
           </SoftBox>
         ),
@@ -106,7 +106,7 @@ export default function data() {
         musicas: [logoJira, "MPB"],
         ouvites: (
           <SoftBox display="flex" py={1}>
-            {avatars([[team4, "Jessica Doe"]])}
+            {avatars([[team4, "Gabriel B."]])}
           </SoftBox>
         ),
         budget: (
@@ -121,12 +121,12 @@ export default function data() {
         ),
       },
       {
-        musicas: [logoInvesion, "Redesign New Online Shop"],
+        musicas: [logoInvesion, "Pop"],
         ouvites: (
           <SoftBox display="flex" py={1}>
             {avatars([
-              [team1, "Ryan Tompson"],
-              [team4, "Jessica Doe"],
+              [team1, "Thiago G."],
+              [team4, "Gabriel B."],
             ])}
           </SoftBox>
         ),

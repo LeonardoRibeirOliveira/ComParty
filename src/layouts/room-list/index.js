@@ -1,5 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import routes from "routes";
+import LogoIcon from "imgs/Logo.png";
+import Sidenav from "examples/Sidenav";
 import SoftBox from "components/SoftBox";
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import SoftTypography from "components/SoftTypography";
@@ -24,6 +27,11 @@ function RoomList() {
 
   return (
     <DashboardLayout>
+      <Sidenav
+        brand={LogoIcon}
+        brandName="ComParty"
+        routes={routes}
+      />
       <SoftBox>
         <Button
           variant="contained"

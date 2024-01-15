@@ -33,25 +33,21 @@ export default function App() {
       return null;
     });
 
-
   const code = new URLSearchParams(window.location.search).get("code")
+
+
+    return (
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+       <Routes>
+          {getRoutes(routes)}
+          {code !== null ? (
+            <Route path="*" element={<Navigate to="/Room" />} />
+          ) : (
+            <Route path="*" element={<Navigate to="/Home" />} />
+          )}
+        </Routes>
+      </ThemeProvider>
+    );
+  }
   
-  return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-        <Sidenav
-          brand={LogoIcon}
-          brandName="ComParty"
-          routes={routes}
-        />
-     <Routes>
-        {getRoutes(routes)}
-        {code !== null ? (
-          <Route path="*" element={<Navigate to="/Room" />} />
-        ) : (
-          <Route path="*" element={<Navigate to="/Home" />} />
-        )}
-      </Routes>
-    </ThemeProvider>
-  );
-}

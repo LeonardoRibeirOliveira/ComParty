@@ -9,6 +9,9 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 
 // Soft UI Dashboard React components
 import SoftBox from "components/SoftBox";
+import routes from "routes";
+import LogoIcon from "imgs/Logo.png";
+import Sidenav from "examples/Sidenav";
 
 // Soft UI Dashboard React examples
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
@@ -25,6 +28,11 @@ import profilesListData from "layouts/profile/data/profilesListData";
 function Overview() {
   return (
     <DashboardLayout>
+      <Sidenav
+        brand={LogoIcon}
+        brandName="ComParty"
+        routes={routes}
+      />
       <Header />
       <SoftBox mt={5} mb={3}>
         <Grid container spacing={3}>

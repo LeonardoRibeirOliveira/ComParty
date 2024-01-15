@@ -16,7 +16,6 @@ function Display({ roomId }) {
   return (
     <Card sx={{ height: "95vh", background:"#D5CEA3", width:"45vh", justifyContent:"space-around",alignContent:"space-around", marginLeft: 'auto' }}>
       <Control roomId={roomId}/>
-      <Login/>
     </Card>
   );
 }

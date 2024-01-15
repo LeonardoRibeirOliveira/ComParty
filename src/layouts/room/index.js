@@ -5,6 +5,9 @@ import Card from "@mui/material/Card";
 //Components
 import SoftBox from "components/SoftBox";
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
+import routes from "routes";
+import LogoIcon from "imgs/Logo.png";
+import Sidenav from "examples/Sidenav";
 
 import Display from "layouts/room/components/Display";
 import Chat from "./components/Chat";
@@ -32,6 +35,11 @@ function Room() {
 
   return (
     <DashboardLayout>
+      <Sidenav
+            brand={LogoIcon}
+            brandName="ComParty"
+            routes={routes}
+          />
       <SoftBox >
           <Grid container spacing={3}>
             <Grid item  md={7}>
