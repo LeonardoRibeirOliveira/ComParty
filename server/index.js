@@ -19,7 +19,7 @@ io.on("connection", (socket) => {
 
   socket.on("join_room", (data) => {
     socket.join(data);
-    console.log(`User with ID: ${socket.id} joined room: ${data}`);
+    console.log(`Usuário com ID: ${socket.id} entrou na sala: ${data}`);
   });
 
   socket.on("send_message", (data) => {
@@ -32,5 +32,5 @@ io.on("connection", (socket) => {
 });
 
 server.listen(3001, () => {
-  console.log("SERVER RUNNING");
+  console.log("===SERVIDOR RODANDO===");
 });

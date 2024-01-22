@@ -19,10 +19,6 @@ import { BrowserRouter } from "react-router-dom";
 // Images
 import LogoIcon from "imgs/Logo.png";
 
-import io from 'socket.io-client'
-
-const socket = io.connect("http://localhost:3001");
-
 export default function App() {
   const getRoutes = (allRoutes) =>
     allRoutes.map((route) => {
@@ -48,7 +44,7 @@ export default function App() {
           {code !== null ? (
             <Route path="*" element={<Navigate to="/Room" />} />
           ) : (
-            <Route path="*" element={<Navigate to="/Home" />} />
+            <Route path="*" element={<Navigate to="/authentication/sign-in" />} />
           )}
         </Routes>
       </ThemeProvider>
