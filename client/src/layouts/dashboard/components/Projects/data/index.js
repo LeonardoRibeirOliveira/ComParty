@@ -141,6 +141,27 @@ export default function data() {
           </SoftBox>
         ),
       },
+      {
+        musicas: [logoAtlassian, "eletrofunk"],
+        ouvites: (
+          <SoftBox display="flex" py={1}>
+            {avatars([
+              [team1, "Thiago G."],
+              [team4, "Gabriel B."],
+            ])}
+          </SoftBox>
+        ),
+        budget: (
+          <SoftTypography variant="caption" color="text" fontWeight="medium">
+            $2,000
+          </SoftTypography>
+        ),
+        completion: (
+          <SoftBox width="8rem" textAlign="left">
+            <SoftProgress value={40} color="info" variant="gradient" label={false} />
+          </SoftBox>
+        ),
+      },
     ],
   };
 }

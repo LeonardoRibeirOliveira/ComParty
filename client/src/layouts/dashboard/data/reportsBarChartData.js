@@ -7,22 +7,27 @@ const reportsBarChartData = {
     {
       icon: { color: "primary", component: "" },
       label: "Sertanejo",
-      progress: { content: "36 Ouvintes", percentage: 60 },
+      progress: { content: "6 Ouvintes", percentage: 6 },
     },
     {
       icon: { color: "info", component: "touch_pp" },
       label: "Rock",
-      progress: { content: "200 Ouvintes", percentage: 90 },
+      progress: { content: "3 Ouvintes", percentage: 3 },
     },
     {
       icon: { color: "warning", component: "" },
       label: "Pop",
-      progress: { content: "45 Ouvintes", percentage: 30 },
+      progress: { content: "5 Ouvintes", percentage: 5 },
     },
     {
       icon: { color: "error", component: "" },
-      label: "Pagode",
-      progress: { content: "43 Ouvintes", percentage: 50 },
+      label: "mpb",
+      progress: { content: "4 Ouvintes", percentage: 4 },
+    },
+    {
+      icon: { color: "error", component: "" },
+      label: "Eletrofunk",
+      progress: { content: "4 Ouvintes", percentage: 4 },
     },
   ],
 };
