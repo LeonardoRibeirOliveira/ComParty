@@ -13,23 +13,23 @@ function Control({ roomId }) {
     try {
       if(roomId == 1)
       {
-        data = await fetch("https://v1.nocodeapi.com/leonardoribeiro/spotify/aCKDBJwfRkXQMhqn/search?q=Sertanejo&type=track&perPage=50");
+        data = await fetch("https://v1.nocodeapi.com/leonardoaopa/spotify/qYopONAknLnSYbIr/search?q=SERTANEJO&type=track");
       }
       else if(roomId == 2)
       {
-        data = await fetch("https://v1.nocodeapi.com/leonardoribeiro/spotify/aCKDBJwfRkXQMhqn/search?q=ACDC&type=track&perPage=50");
+        data = await fetch("https://v1.nocodeapi.com/leonardoaopa/spotify/qYopONAknLnSYbIr/search?q=ROCK&type=track");
       }
       else if(roomId == 3)
       {
-        data = await fetch("https://v1.nocodeapi.com/leonardoribeiro/spotify/aCKDBJwfRkXQMhqn/search?q=MPB&type=track&perPage=50");
+        data = await fetch("https://v1.nocodeapi.com/leonardoaopa/spotify/qYopONAknLnSYbIr/search?q=MPB&type=track");
       }
       else if(roomId == 4)
       {
-        data = await fetch("https://v1.nocodeapi.com/leonardoribeiro/spotify/aCKDBJwfRkXQMhqn/search?q=PopMusic&type=track&perPage=50");
+        data = await fetch("https://v1.nocodeapi.com/leonardoaopa/spotify/qYopONAknLnSYbIr/search?q=POPInternacional&type=track");
       }
       else
       {
-        data = await fetch("https://v1.nocodeapi.com/leonardoribeiro/spotify/aCKDBJwfRkXQMhqn/search?q=Eletrofunk&type=track&perPage=50");
+        data = await fetch("https://v1.nocodeapi.com/leonardoaopa/spotify/qYopONAknLnSYbIr/search?q=ELETROFUNK&type=track");
       }
       let convertedData = await data.json();
       setTracks(convertedData.tracks.items);
