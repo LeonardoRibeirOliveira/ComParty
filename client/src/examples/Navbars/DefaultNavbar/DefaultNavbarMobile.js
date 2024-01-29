@@ -33,7 +33,6 @@ function DefaultNavbarMobile({ open, close }) {
       <SoftBox px={0.5}>
         <DefaultNavbarLink icon="donut_large" name="Home" route="/dashboard" />
         <DefaultNavbarLink icon="person" name="profile" route="/profile" />
-        <DefaultNavbarLink icon="key" name="sign in" route="/authentication/sign-in" />
       </SoftBox>
     </Menu>
   );

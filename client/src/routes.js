@@ -19,7 +19,6 @@ import Dashboard from "layouts/dashboard";
 import RoomList from "layouts/room-list";
 import Room from "layouts/room";
 import Profile from "layouts/profile";
-import SignIn from "layouts/authentication/sign-in";
 
 // Soft UI Dashboard React icons
 import Shop from "examples/Icons/Shop";
@@ -56,15 +55,6 @@ const routes = [
     route: "/profile",
     icon: <CustomerSupport size="12px" />,
     component: <Profile />,
-    noCollapse: true,
-  },
-  {
-    type: "collapse",
-    name: "Sign In",
-    key: "sign-in",
-    route: "/authentication/sign-in",
-    icon: <Document size="12px" />,
-    component: <SignIn />,
     noCollapse: true,
   },
   {

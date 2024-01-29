@@ -18,8 +18,8 @@ io.on("connection", (socket) => {
   console.log(`Usuario conectado: ${socket.id}`);
 
   socket.on("join_room", (data) => {
-    socket.join(data);
-    console.log(`Usuário com ID: ${socket.id} entrou na sala: ${data}`);
+    socket.join(data.room);
+    console.log(`Usuário com ID: ${socket.id} entrou na sala: ${data.room} com nome: ${data.username}`);
   });
 
   socket.on("send_message", (data) => {

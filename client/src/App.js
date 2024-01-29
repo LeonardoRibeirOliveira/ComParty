@@ -44,7 +44,7 @@ export default function App() {
           {code !== null ? (
             <Route path="*" element={<Navigate to="/Room" />} />
           ) : (
-            <Route path="*" element={<Navigate to="/authentication/sign-in" />} />
+            <Route path="*" element={<Navigate to="/Home" />} />
           )}
         </Routes>
       </ThemeProvider>
